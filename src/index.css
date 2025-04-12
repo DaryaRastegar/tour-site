@@ -1,0 +1,59 @@
+@import "tailwindcss";
+:root {
+  --background: #bdb4b4;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("/fonts/YekanBakh-Light.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("/fonts/YekanBakh-Regular.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("/fonts/YekanBakh-Bold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("/fonts/YekanBakh-Heavy.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("/fonts/YekanBakh-Fat.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Yekan Bakh", sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
